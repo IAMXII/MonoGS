@@ -1,0 +1,4 @@
+# ninja log v5
+0	6210	1712977545955201671	/home/lsr/MonoGS/submodules/simple-knn/build/temp.linux-x86_64-cpython-37/simple_knn.o	cfb34b5d204a1d20
+0	10716	1712977550459272126	/home/lsr/MonoGS/submodules/simple-knn/build/temp.linux-x86_64-cpython-37/ext.o	13d8f864c309a8e8
+1	24758	1712977564503491458	/home/lsr/MonoGS/submodules/simple-knn/build/temp.linux-x86_64-cpython-37/spatial.o	db68579a0197bb8d

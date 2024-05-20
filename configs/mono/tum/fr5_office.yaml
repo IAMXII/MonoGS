@@ -1,0 +1,18 @@
+inherit_from: "configs/mono/tum/base_config.yaml"
+
+Dataset:
+  dataset_path: "../dataset/urban"
+  Calibration:
+    fx: 646.955997072896
+    fy: 647.313486650587
+    cx: 374.835206750483
+    cy: 274.110353312482
+    k1: -0.233159251613014
+    k2: 0.142542553330781
+    p1: 0.0
+    p2: 0.0
+    k3: 0.0
+    width: 720
+    height: 540
+    depth_scale: 1.0
+    distorted: True
