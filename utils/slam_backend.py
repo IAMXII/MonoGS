@@ -67,7 +67,7 @@ class BackEnd(mp.Process):
 
     def add_next_kf(self, frame_idx, viewpoint, init=False, scale=2.0, depth_map=None):
         self.gaussians.extend_from_pcd_seq(
-            viewpoint, kf_id=frame_idx, init=init, scale=scale, depthmap=depth_map
+            viewpoint, kf_id=frame_idx+1, init=init, scale=scale, depthmap=depth_map
         )
 
     def reset(self):
@@ -453,10 +453,11 @@ class BackEnd(mp.Process):
                     self.reset()
 
                     self.viewpoints[cur_frame_idx] = viewpoint
+                    self.gaussians.insert_background()
                     self.add_next_kf(
                         cur_frame_idx, viewpoint, depth_map=depth_map, init=True
                     )
-                    self.gaussians.insert_background()
+
                     self.initialize_map(cur_frame_idx, viewpoint)
                     self.push_to_frontend("init")
 
