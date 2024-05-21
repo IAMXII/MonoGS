@@ -456,6 +456,7 @@ class BackEnd(mp.Process):
                     self.add_next_kf(
                         cur_frame_idx, viewpoint, depth_map=depth_map, init=True
                     )
+                    self.gaussians.insert_background()
                     self.initialize_map(cur_frame_idx, viewpoint)
                     self.push_to_frontend("init")
 

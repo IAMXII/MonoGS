@@ -59,7 +59,6 @@ class SLAM:
         self.gaussians.training_setup(opt_params)
         bg_color = [0, 0, 0]
         self.background = torch.tensor(bg_color, dtype=torch.float32, device="cuda")
-        self.gaussians.insert_background()
         frontend_queue = mp.Queue()
         backend_queue = mp.Queue()
 
