@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "slam.py", line 252, in <module>
+    slam = SLAM(config, save_dir=save_dir)
+  File "slam.py", line 56, in __init__
+    model_params, model_params.source_path, config=config
+  File "/home/lsr/MonoGS_Version_Control/MonoGS/utils/dataset.py", line 517, in load_dataset
+    return TUMDataset(args, path, config)
+  File "/home/lsr/MonoGS_Version_Control/MonoGS/utils/dataset.py", line 415, in __init__
+    os.listdir(color_path), key=lambda x: int("".join(filter(str.isdigit, x)))
+FileNotFoundError: [Errno 2] No such file or directory: '../dataset/cp/images_lidar_2'

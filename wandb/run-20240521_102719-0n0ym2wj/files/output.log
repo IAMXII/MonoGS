@@ -1,0 +1,25 @@
+
+scale_value: 1
+scale_value: 1
+self.camera[current_idx].scale: 1
+prev_scale: 1
+Traceback (most recent call last):
+  File "slam.py", line 251, in <module>
+    slam = SLAM(config, save_dir=save_dir)
+  File "slam.py", line 109, in __init__
+    self.frontend.run()
+  File "/home/lsr/MonoGS_Version_Control/MonoGS/utils/slam_frontend.py", line 604, in run
+    data = self.frontend_queue.get()
+  File "/home/lsr/anaconda3/envs/MonoGS/lib/python3.7/multiprocessing/queues.py", line 113, in get
+    return _ForkingPickler.loads(res)
+  File "/home/lsr/anaconda3/envs/MonoGS/lib/python3.7/site-packages/torch/multiprocessing/reductions.py", line 297, in rebuild_storage_fd
+    fd = df.detach()
+  File "/home/lsr/anaconda3/envs/MonoGS/lib/python3.7/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/home/lsr/anaconda3/envs/MonoGS/lib/python3.7/multiprocessing/resource_sharer.py", line 87, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/home/lsr/anaconda3/envs/MonoGS/lib/python3.7/multiprocessing/connection.py", line 492, in Client
+    c = SocketClient(address)
+  File "/home/lsr/anaconda3/envs/MonoGS/lib/python3.7/multiprocessing/connection.py", line 620, in SocketClient
+    s.connect(address)
+FileNotFoundError: [Errno 2] No such file or directory

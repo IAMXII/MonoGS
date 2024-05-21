@@ -1,7 +1,7 @@
 inherit_from: "configs/rgbd/tum/base_config.yaml"
 
 Dataset:
-  dataset_path: "../dataset/cp"
+  dataset_path: "../../dataset/cp"
   Calibration:
     fx: 332.232689
     fy: 332.644823

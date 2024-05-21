@@ -1,0 +1,234 @@
+2024-05-21 10:41:57,571 INFO    StreamThr :1348864 [internal.py:wandb_internal():89] W&B internal server running at pid: 1348864, started at: 2024-05-21 10:41:57.570365
+2024-05-21 10:41:57,572 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: status
+2024-05-21 10:41:57,578 INFO    WriterThread:1348864 [datastore.py:open_for_write():87] open: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/run-jwoix1mh.wandb
+2024-05-21 10:41:57,578 DEBUG   SenderThread:1348864 [sender.py:send():379] send: header
+2024-05-21 10:41:57,592 DEBUG   SenderThread:1348864 [sender.py:send():379] send: run
+2024-05-21 10:41:58,552 INFO    SenderThread:1348864 [dir_watcher.py:__init__():211] watching files in: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files
+2024-05-21 10:41:58,552 INFO    SenderThread:1348864 [sender.py:_start_run_threads():1127] run started: jwoix1mh with start time 1716259317.570155
+2024-05-21 10:41:58,559 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: check_version
+2024-05-21 10:41:58,559 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: check_version
+2024-05-21 10:41:59,256 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: run_start
+2024-05-21 10:41:59,288 DEBUG   HandlerThread:1348864 [system_info.py:__init__():26] System info init
+2024-05-21 10:41:59,288 DEBUG   HandlerThread:1348864 [system_info.py:__init__():41] System info init done
+2024-05-21 10:41:59,288 INFO    HandlerThread:1348864 [system_monitor.py:start():194] Starting system monitor
+2024-05-21 10:41:59,289 INFO    SystemMonitor:1348864 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-21 10:41:59,290 INFO    HandlerThread:1348864 [system_monitor.py:probe():214] Collecting system info
+2024-05-21 10:41:59,290 INFO    SystemMonitor:1348864 [interfaces.py:start():190] Started cpu monitoring
+2024-05-21 10:41:59,290 INFO    SystemMonitor:1348864 [interfaces.py:start():190] Started disk monitoring
+2024-05-21 10:41:59,291 INFO    SystemMonitor:1348864 [interfaces.py:start():190] Started gpu monitoring
+2024-05-21 10:41:59,291 INFO    SystemMonitor:1348864 [interfaces.py:start():190] Started memory monitoring
+2024-05-21 10:41:59,292 INFO    SystemMonitor:1348864 [interfaces.py:start():190] Started network monitoring
+2024-05-21 10:41:59,326 DEBUG   HandlerThread:1348864 [system_info.py:probe():150] Probing system
+2024-05-21 10:41:59,333 DEBUG   HandlerThread:1348864 [system_info.py:_probe_git():135] Probing git
+2024-05-21 10:41:59,347 DEBUG   HandlerThread:1348864 [system_info.py:_probe_git():143] Probing git done
+2024-05-21 10:41:59,347 DEBUG   HandlerThread:1348864 [system_info.py:probe():198] Probing system done
+2024-05-21 10:41:59,347 DEBUG   HandlerThread:1348864 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-105-generic-x86_64-with-debian-bullseye-sid', 'python': '3.7.13', 'heartbeatAt': '2024-05-21T02:41:59.326387', 'startedAt': '2024-05-21T02:41:57.562348', 'docker': None, 'cuda': None, 'args': ('--config', 'configs/rgbd/tum/fr4_office.yaml'), 'state': 'running', 'program': 'slam.py', 'codePathLocal': 'slam.py', 'codePath': 'slam.py', 'git': {'remote': 'https://github.com/IAMXII/MonoGS.git', 'commit': '55e124f658cb987b14427df85d23cc3b34296aa3'}, 'email': '675560021@qq.com', 'root': '/home/lsr/MonoGS_Version_Control/MonoGS', 'host': 'lsr', 'username': 'lsr', 'executable': '/home/lsr/anaconda3/envs/MonoGS/bin/python', 'cpu_count': 12, 'cpu_count_logical': 20, 'cpu_freq': {'current': 2260.46025, 'min': 800.0, 'max': 4580.0}, 'cpu_freq_per_core': [{'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 1119.634, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 3543.168, 'min': 800.0, 'max': 4900.0}, {'current': 2100.0, 'min': 800.0, 'max': 4900.0}, {'current': 2100.0, 'min': 800.0, 'max': 4900.0}, {'current': 2100.0, 'min': 800.0, 'max': 4900.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 4800.0}, {'current': 2100.0, 'min': 800.0, 'max': 3600.0}, {'current': 2100.0, 'min': 800.0, 'max': 3600.0}, {'current': 2100.0, 'min': 800.0, 'max': 3600.0}, {'current': 2100.0, 'min': 800.0, 'max': 3600.0}], 'disk': {'/': {'total': 548.9532012939453, 'used': 140.4941062927246}}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 62.535736083984375}}
+2024-05-21 10:41:59,347 INFO    HandlerThread:1348864 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-21 10:41:59,347 INFO    HandlerThread:1348864 [system_monitor.py:probe():227] Publishing system info
+2024-05-21 10:41:59,347 DEBUG   HandlerThread:1348864 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-05-21 10:41:59,553 INFO    Thread-12 :1348864 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/conda-environment.yaml
+2024-05-21 10:42:01,967 DEBUG   HandlerThread:1348864 [system_info.py:_save_conda():222] Saving conda packages done
+2024-05-21 10:42:01,968 INFO    HandlerThread:1348864 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-21 10:42:01,969 DEBUG   SenderThread:1348864 [sender.py:send():379] send: files
+2024-05-21 10:42:01,970 INFO    SenderThread:1348864 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-05-21 10:42:02,012 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-21 10:42:02,012 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 10:42:02,013 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: python_packages
+2024-05-21 10:42:02,013 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: stop_status
+2024-05-21 10:42:02,014 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 10:42:02,553 INFO    Thread-12 :1348864 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/conda-environment.yaml
+2024-05-21 10:42:02,553 INFO    Thread-12 :1348864 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/wandb-metadata.json
+2024-05-21 10:42:02,553 INFO    Thread-12 :1348864 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/requirements.txt
+2024-05-21 10:42:02,696 DEBUG   SenderThread:1348864 [sender.py:send():379] send: telemetry
+2024-05-21 10:42:02,696 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 10:42:02,696 DEBUG   SenderThread:1348864 [sender.py:send():379] send: metric
+2024-05-21 10:42:02,697 DEBUG   SenderThread:1348864 [sender.py:send():379] send: telemetry
+2024-05-21 10:42:02,697 DEBUG   SenderThread:1348864 [sender.py:send():379] send: metric
+2024-05-21 10:42:02,697 WARNING SenderThread:1348864 [sender.py:send_metric():1341] Seen metric with glob (shouldn't happen)
+2024-05-21 10:42:03,227 INFO    wandb-upload_0:1348864 [upload_job.py:push():131] Uploaded file /tmp/tmpxsbf05xxwandb/uf4hoxgi-wandb-metadata.json
+2024-05-21 10:42:07,697 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 10:42:09,554 INFO    Thread-12 :1348864 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/output.log
+2024-05-21 10:42:11,555 INFO    Thread-12 :1348864 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/output.log
+2024-05-21 10:42:12,937 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 10:42:17,013 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 10:42:17,014 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 10:42:17,014 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: stop_status
+2024-05-21 10:42:18,358 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 10:42:23,359 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 10:42:27,563 INFO    Thread-12 :1348864 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/output.log
+2024-05-21 10:42:28,580 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 10:42:29,563 INFO    Thread-12 :1348864 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/config.yaml
+2024-05-21 10:42:32,016 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 10:42:32,016 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: stop_status
+2024-05-21 10:42:32,059 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 10:42:34,287 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 10:42:39,288 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 10:42:43,566 INFO    Thread-12 :1348864 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/output.log
+2024-05-21 10:42:44,892 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 10:42:47,035 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 10:42:47,035 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: stop_status
+2024-05-21 10:42:47,075 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 10:42:50,384 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 10:42:55,385 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 10:42:59,292 DEBUG   SystemMonitor:1348864 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-21 10:42:59,293 DEBUG   SenderThread:1348864 [sender.py:send():379] send: stats
+2024-05-21 10:43:01,294 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 10:43:02,052 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 10:43:02,052 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: stop_status
+2024-05-21 10:43:02,095 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 10:43:05,570 INFO    Thread-12 :1348864 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/output.log
+2024-05-21 10:43:06,372 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 10:43:07,571 INFO    Thread-12 :1348864 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/output.log
+2024-05-21 10:43:11,453 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 10:43:11,572 INFO    Thread-12 :1348864 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/output.log
+2024-05-21 10:43:13,573 INFO    Thread-12 :1348864 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/output.log
+2024-05-21 10:43:15,573 INFO    Thread-12 :1348864 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/output.log
+2024-05-21 10:43:16,923 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 10:43:17,014 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 10:43:17,014 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: stop_status
+2024-05-21 10:43:17,024 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 10:43:17,613 DEBUG   SenderThread:1348864 [sender.py:send():379] send: exit
+2024-05-21 10:43:17,613 INFO    SenderThread:1348864 [sender.py:send_exit():586] handling exit code: 255
+2024-05-21 10:43:17,613 INFO    SenderThread:1348864 [sender.py:send_exit():588] handling runtime: 78
+2024-05-21 10:43:17,613 INFO    SenderThread:1348864 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 10:43:17,613 INFO    SenderThread:1348864 [sender.py:send_exit():594] send defer
+2024-05-21 10:43:17,613 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 10:43:17,613 INFO    HandlerThread:1348864 [handler.py:handle_request_defer():172] handle defer: 0
+2024-05-21 10:43:17,613 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: defer
+2024-05-21 10:43:17,613 INFO    SenderThread:1348864 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-05-21 10:43:17,613 INFO    SenderThread:1348864 [sender.py:transition_state():614] send defer: 1
+2024-05-21 10:43:17,613 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 10:43:17,613 INFO    HandlerThread:1348864 [handler.py:handle_request_defer():172] handle defer: 1
+2024-05-21 10:43:17,614 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: defer
+2024-05-21 10:43:17,614 INFO    SenderThread:1348864 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-05-21 10:43:17,614 INFO    SenderThread:1348864 [sender.py:transition_state():614] send defer: 2
+2024-05-21 10:43:17,614 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 10:43:17,614 INFO    HandlerThread:1348864 [handler.py:handle_request_defer():172] handle defer: 2
+2024-05-21 10:43:17,614 INFO    HandlerThread:1348864 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-21 10:43:17,614 DEBUG   SystemMonitor:1348864 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-21 10:43:17,614 INFO    HandlerThread:1348864 [interfaces.py:finish():202] Joined cpu monitor
+2024-05-21 10:43:17,614 DEBUG   SystemMonitor:1348864 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-21 10:43:17,614 INFO    HandlerThread:1348864 [interfaces.py:finish():202] Joined disk monitor
+2024-05-21 10:43:17,669 INFO    HandlerThread:1348864 [interfaces.py:finish():202] Joined gpu monitor
+2024-05-21 10:43:17,669 INFO    HandlerThread:1348864 [interfaces.py:finish():202] Joined memory monitor
+2024-05-21 10:43:17,669 INFO    HandlerThread:1348864 [interfaces.py:finish():202] Joined network monitor
+2024-05-21 10:43:17,669 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: defer
+2024-05-21 10:43:17,669 INFO    SenderThread:1348864 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-05-21 10:43:17,669 INFO    SenderThread:1348864 [sender.py:transition_state():614] send defer: 3
+2024-05-21 10:43:17,669 DEBUG   SenderThread:1348864 [sender.py:send():379] send: stats
+2024-05-21 10:43:17,670 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 10:43:17,670 INFO    HandlerThread:1348864 [handler.py:handle_request_defer():172] handle defer: 3
+2024-05-21 10:43:17,670 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: defer
+2024-05-21 10:43:17,670 INFO    SenderThread:1348864 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-05-21 10:43:17,670 INFO    SenderThread:1348864 [sender.py:transition_state():614] send defer: 4
+2024-05-21 10:43:17,670 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 10:43:17,670 INFO    HandlerThread:1348864 [handler.py:handle_request_defer():172] handle defer: 4
+2024-05-21 10:43:17,670 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: defer
+2024-05-21 10:43:17,670 INFO    SenderThread:1348864 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-05-21 10:43:17,670 INFO    SenderThread:1348864 [sender.py:transition_state():614] send defer: 5
+2024-05-21 10:43:17,670 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 10:43:17,670 INFO    HandlerThread:1348864 [handler.py:handle_request_defer():172] handle defer: 5
+2024-05-21 10:43:17,670 DEBUG   SenderThread:1348864 [sender.py:send():379] send: summary
+2024-05-21 10:43:17,670 INFO    SenderThread:1348864 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 10:43:17,670 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: defer
+2024-05-21 10:43:17,670 INFO    SenderThread:1348864 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-05-21 10:43:17,670 INFO    SenderThread:1348864 [sender.py:transition_state():614] send defer: 6
+2024-05-21 10:43:17,670 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 10:43:17,671 INFO    HandlerThread:1348864 [handler.py:handle_request_defer():172] handle defer: 6
+2024-05-21 10:43:17,671 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: defer
+2024-05-21 10:43:17,671 INFO    SenderThread:1348864 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-05-21 10:43:17,671 INFO    SenderThread:1348864 [sender.py:transition_state():614] send defer: 7
+2024-05-21 10:43:17,671 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 10:43:17,671 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 10:43:17,671 INFO    HandlerThread:1348864 [handler.py:handle_request_defer():172] handle defer: 7
+2024-05-21 10:43:17,671 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: defer
+2024-05-21 10:43:17,671 INFO    SenderThread:1348864 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-05-21 10:43:18,574 INFO    Thread-12 :1348864 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/wandb-summary.json
+2024-05-21 10:43:18,613 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-21 10:43:19,572 INFO    SenderThread:1348864 [sender.py:transition_state():614] send defer: 8
+2024-05-21 10:43:19,572 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: poll_exit
+2024-05-21 10:43:19,573 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 10:43:19,573 INFO    HandlerThread:1348864 [handler.py:handle_request_defer():172] handle defer: 8
+2024-05-21 10:43:19,575 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: defer
+2024-05-21 10:43:19,575 INFO    SenderThread:1348864 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-05-21 10:43:19,575 INFO    SenderThread:1348864 [job_builder.py:build():318] Attempting to build job artifact
+2024-05-21 10:43:19,576 INFO    Thread-12 :1348864 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/output.log
+2024-05-21 10:43:19,577 INFO    SenderThread:1348864 [job_builder.py:_get_source_type():455] is repo sourced job
+2024-05-21 10:43:19,606 INFO    SenderThread:1348864 [job_builder.py:build():431] adding wandb-job metadata file
+2024-05-21 10:43:19,613 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-21 10:43:19,625 INFO    SenderThread:1348864 [sender.py:transition_state():614] send defer: 9
+2024-05-21 10:43:19,625 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: poll_exit
+2024-05-21 10:43:19,625 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 10:43:19,626 INFO    HandlerThread:1348864 [handler.py:handle_request_defer():172] handle defer: 9
+2024-05-21 10:43:19,626 DEBUG   SenderThread:1348864 [sender.py:send():379] send: artifact
+2024-05-21 10:43:20,614 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-21 10:43:21,009 INFO    SenderThread:1348864 [sender.py:send_artifact():1468] sent artifact job-https___github.com_IAMXII_MonoGS.git_slam.py - {'id': 'QXJ0aWZhY3Q6ODQzNTQ0NjQw', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NzE1NjYxOQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODQzNTQ0NjQw', 'versionIndex': 0}}}
+2024-05-21 10:43:21,009 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: defer
+2024-05-21 10:43:21,009 INFO    SenderThread:1348864 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-05-21 10:43:21,009 INFO    SenderThread:1348864 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-21 10:43:21,578 INFO    SenderThread:1348864 [dir_watcher.py:finish():388] scan: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files
+2024-05-21 10:43:21,578 INFO    SenderThread:1348864 [dir_watcher.py:finish():402] scan save: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/wandb-summary.json wandb-summary.json
+2024-05-21 10:43:21,579 INFO    SenderThread:1348864 [dir_watcher.py:finish():402] scan save: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/output.log output.log
+2024-05-21 10:43:21,581 INFO    SenderThread:1348864 [dir_watcher.py:finish():402] scan save: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/wandb-metadata.json wandb-metadata.json
+2024-05-21 10:43:21,581 INFO    SenderThread:1348864 [dir_watcher.py:finish():402] scan save: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/requirements.txt requirements.txt
+2024-05-21 10:43:21,583 INFO    SenderThread:1348864 [dir_watcher.py:finish():402] scan save: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/conda-environment.yaml conda-environment.yaml
+2024-05-21 10:43:21,583 INFO    SenderThread:1348864 [dir_watcher.py:finish():402] scan save: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/config.yaml config.yaml
+2024-05-21 10:43:21,583 INFO    SenderThread:1348864 [sender.py:transition_state():614] send defer: 10
+2024-05-21 10:43:21,583 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: poll_exit
+2024-05-21 10:43:21,583 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 10:43:21,585 INFO    HandlerThread:1348864 [handler.py:handle_request_defer():172] handle defer: 10
+2024-05-21 10:43:21,587 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: defer
+2024-05-21 10:43:21,587 INFO    SenderThread:1348864 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-05-21 10:43:21,587 INFO    SenderThread:1348864 [file_pusher.py:finish():172] shutting down file pusher
+2024-05-21 10:43:21,615 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-21 10:43:21,616 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: poll_exit
+2024-05-21 10:43:22,219 INFO    wandb-upload_1:1348864 [upload_job.py:push():131] Uploaded file /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/wandb-summary.json
+2024-05-21 10:43:22,550 INFO    wandb-upload_2:1348864 [upload_job.py:push():131] Uploaded file /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/output.log
+2024-05-21 10:43:22,616 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-21 10:43:22,616 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: poll_exit
+2024-05-21 10:43:22,888 INFO    wandb-upload_3:1348864 [upload_job.py:push():131] Uploaded file /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/requirements.txt
+2024-05-21 10:43:22,906 INFO    wandb-upload_5:1348864 [upload_job.py:push():131] Uploaded file /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/config.yaml
+2024-05-21 10:43:22,931 INFO    wandb-upload_4:1348864 [upload_job.py:push():131] Uploaded file /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/files/conda-environment.yaml
+2024-05-21 10:43:23,131 INFO    Thread-11 :1348864 [sender.py:transition_state():614] send defer: 11
+2024-05-21 10:43:23,132 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 10:43:23,133 INFO    HandlerThread:1348864 [handler.py:handle_request_defer():172] handle defer: 11
+2024-05-21 10:43:23,134 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: defer
+2024-05-21 10:43:23,134 INFO    SenderThread:1348864 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-05-21 10:43:23,134 INFO    SenderThread:1348864 [file_pusher.py:join():178] waiting for file pusher
+2024-05-21 10:43:23,134 INFO    SenderThread:1348864 [sender.py:transition_state():614] send defer: 12
+2024-05-21 10:43:23,135 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 10:43:23,135 INFO    HandlerThread:1348864 [handler.py:handle_request_defer():172] handle defer: 12
+2024-05-21 10:43:23,135 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: defer
+2024-05-21 10:43:23,136 INFO    SenderThread:1348864 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-05-21 10:43:23,136 INFO    SenderThread:1348864 [file_stream.py:finish():614] file stream finish called
+2024-05-21 10:43:23,430 INFO    SenderThread:1348864 [file_stream.py:finish():618] file stream finish is done
+2024-05-21 10:43:23,430 INFO    SenderThread:1348864 [sender.py:transition_state():614] send defer: 13
+2024-05-21 10:43:23,431 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 10:43:23,431 INFO    HandlerThread:1348864 [handler.py:handle_request_defer():172] handle defer: 13
+2024-05-21 10:43:23,432 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: defer
+2024-05-21 10:43:23,432 INFO    SenderThread:1348864 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-05-21 10:43:23,432 INFO    SenderThread:1348864 [sender.py:transition_state():614] send defer: 14
+2024-05-21 10:43:23,432 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 10:43:23,432 INFO    HandlerThread:1348864 [handler.py:handle_request_defer():172] handle defer: 14
+2024-05-21 10:43:23,433 DEBUG   SenderThread:1348864 [sender.py:send():379] send: final
+2024-05-21 10:43:23,434 DEBUG   SenderThread:1348864 [sender.py:send():379] send: footer
+2024-05-21 10:43:23,434 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: defer
+2024-05-21 10:43:23,434 INFO    SenderThread:1348864 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-05-21 10:43:23,435 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-21 10:43:23,435 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-21 10:43:23,436 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: poll_exit
+2024-05-21 10:43:23,436 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: poll_exit
+2024-05-21 10:43:23,436 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: server_info
+2024-05-21 10:43:23,437 DEBUG   SenderThread:1348864 [sender.py:send_request():406] send_request: server_info
+2024-05-21 10:43:23,443 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: get_summary
+2024-05-21 10:43:23,444 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: sampled_history
+2024-05-21 10:43:23,444 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 10:43:23,707 INFO    MainThread:1348864 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-05-21 10:43:23,707 INFO    MainThread:1348864 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-05-21 10:43:23,708 INFO    MainThread:1348864 [wandb_run.py:_footer_sync_info():3895] logging synced files
+2024-05-21 10:43:23,708 DEBUG   HandlerThread:1348864 [handler.py:handle_request():146] handle_request: shutdown
+2024-05-21 10:43:23,709 INFO    HandlerThread:1348864 [handler.py:finish():866] shutting down handler
+2024-05-21 10:43:24,437 INFO    WriterThread:1348864 [datastore.py:close():296] close: /home/lsr/MonoGS_Version_Control/MonoGS/wandb/run-20240521_104157-jwoix1mh/run-jwoix1mh.wandb
+2024-05-21 10:43:24,707 INFO    SenderThread:1348864 [sender.py:finish():1546] shutting down sender
+2024-05-21 10:43:24,707 INFO    SenderThread:1348864 [file_pusher.py:finish():172] shutting down file pusher
+2024-05-21 10:43:24,707 INFO    SenderThread:1348864 [file_pusher.py:join():178] waiting for file pusher

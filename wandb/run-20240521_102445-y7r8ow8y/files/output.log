@@ -1,0 +1,34 @@
+
+scale_value: 1
+scale_value: 1
+self.camera[current_idx].scale: 1
+prev_scale: 1
+scale_value: 1
+self.camera[current_idx].scale: 1
+prev_scale: 1
+scale_value: 1
+self.camera[current_idx].scale: 1
+prev_scale: 1
+scale_value: 1
+self.camera[current_idx].scale: 1
+prev_scale: 1
+scale_value: 1
+self.camera[current_idx].scale: 1
+prev_scale: 1
+scale_value: 1
+self.camera[current_idx].scale: 1
+prev_scale: 1
+Traceback (most recent call last):
+  File "slam.py", line 251, in <module>
+    slam = SLAM(config, save_dir=save_dir)
+  File "slam.py", line 109, in __init__
+    self.frontend.run()
+  File "/home/lsr/MonoGS_Version_Control/MonoGS/utils/slam_frontend.py", line 501, in run
+    render_pkg = self.tracking(cur_frame_idx, viewpoint)
+  File "/home/lsr/MonoGS_Version_Control/MonoGS/utils/slam_frontend.py", line 281, in tracking
+    self.config, image, depth, opacity, viewpoint
+  File "/home/lsr/MonoGS_Version_Control/MonoGS/utils/slam_utils.py", line 60, in get_loss_tracking
+    return get_loss_tracking_rgbd(config, image_ab, depth, opacity, viewpoint)
+  File "/home/lsr/MonoGS_Version_Control/MonoGS/utils/slam_utils.py", line 80, in get_loss_tracking_rgbd
+    dtype=torch.float32, device=image.device
+KeyboardInterrupt

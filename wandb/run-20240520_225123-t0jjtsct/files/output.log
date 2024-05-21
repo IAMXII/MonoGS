@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "slam.py", line 252, in <module>
+    slam = SLAM(config, save_dir=save_dir)
+  File "slam.py", line 62, in __init__
+    self.gaussians.insert_background()
+  File "/home/lsr/MonoGS_Version_Control/MonoGS/gaussian_splatting/scene/gaussian_model.py", line 194, in insert_background
+    fused_point_cloud, features, scales, rots, opacities
+TypeError: extend_from_pcd() missing 1 required positional argument: 'kf_id'

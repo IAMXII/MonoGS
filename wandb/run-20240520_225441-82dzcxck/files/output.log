@@ -1,0 +1,9 @@
+
+scale_value: 1
+Traceback (most recent call last):
+  File "slam.py", line 252, in <module>
+  File "slam.py", line 110, in __init__
+    backend_queue.put(["pause"])
+  File "/home/lsr/MonoGS_Version_Control/MonoGS/utils/slam_frontend.py", line 472, in run
+    time.sleep(0.01)
+KeyboardInterrupt

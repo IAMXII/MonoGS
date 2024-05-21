@@ -1,0 +1,64 @@
+
+scale_value: 1
+scale_value: 1
+self.camera[current_idx].scale: 1
+prev_scale: 1
+scale_value: 1
+self.camera[current_idx].scale: 1
+prev_scale: 1
+scale_value: 1
+self.camera[current_idx].scale: 1
+prev_scale: 1
+scale_value: 1
+self.camera[current_idx].scale: 1
+prev_scale: 1
+scale_value: 1
+self.camera[current_idx].scale: 1
+prev_scale: 1
+scale_value: 1
+self.camera[current_idx].scale: 1
+prev_scale: 1
+scale_value: 1
+self.camera[current_idx].scale: 1
+prev_scale: 1
+scale_value: 1
+self.camera[current_idx].scale: 1
+prev_scale: 1
+scale_value: 1
+self.camera[current_idx].scale: 1
+prev_scale: 1
+scale_value: 1
+self.camera[current_idx].scale: 1
+prev_scale: 1
+scale_value: 1
+self.camera[current_idx].scale: 1
+prev_scale: 1
+scale_value: 1
+self.camera[current_idx].scale: 1
+prev_scale: 1
+scale_value: 1
+self.camera[current_idx].scale: 1
+prev_scale: 1
+scale_value: 1
+self.camera[current_idx].scale: 1
+prev_scale: 1
+scale_value: 1
+self.camera[current_idx].scale: 1
+prev_scale: 1
+scale_value: 1
+self.camera[current_idx].scale: 1
+prev_scale: 1
+Traceback (most recent call last):
+  File "slam.py", line 252, in <module>
+    slam = SLAM(config, save_dir=save_dir)
+  File "slam.py", line 110, in __init__
+    self.frontend.run()
+  File "/home/lsr/MonoGS_Version_Control/MonoGS/utils/slam_frontend.py", line 501, in run
+    render_pkg = self.tracking(cur_frame_idx, viewpoint)
+  File "/home/lsr/MonoGS_Version_Control/MonoGS/utils/slam_frontend.py", line 283, in tracking
+    loss_tracking.backward()
+  File "/home/lsr/anaconda3/envs/MonoGS/lib/python3.7/site-packages/torch/_tensor.py", line 396, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/lsr/anaconda3/envs/MonoGS/lib/python3.7/site-packages/torch/autograd/__init__.py", line 175, in backward
+    allow_unreachable=True, accumulate_grad=True)  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

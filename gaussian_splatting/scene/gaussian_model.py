@@ -122,7 +122,7 @@ class GaussianModel:
         plane_point = np.array(plane_point)
 
         # Create two vectors in the plane
-        v1 = np.cross(plane_normal, np.array([0, 1, 0]))
+        v1 = np.cross(plane_normal, np.array([0, 0, 1]))
         if np.linalg.norm(v1) == 0:
             v1 = np.cross(plane_normal, np.array([1, 0, 0]))
         v1 = v1.astype(np.float64)
@@ -140,11 +140,11 @@ class GaussianModel:
         return points
 
     def insert_background(self):   # liuwei
-        plane_normal = [0, 0, 1]  # z = 0 plane
-        plane_point = [0, 0, 1000]  # Origin point on the plane
+        plane_normal = [0, 1, 0]  # z = 0 plane
+        plane_point = [0, -10, 0]  # Origin point on the plane
         num_points = 100000
-        x_range = (-1000, 1000)  # x coordinates range from -1000 to 1000
-        y_range = (-1000, 1000)  # y coordinates range from -1000 to 1000
+        x_range = (-100, 100)  # x coordinates range from -1000 to 1000
+        y_range = (-100, 100)  # y coordinates range from -1000 to 1000
         points = self.generate_points_in_plane_area(plane_normal, plane_point, num_points, x_range, y_range)
         new_xyz = np.asarray(points)
         new_rgb = np.ones_like(new_xyz)
@@ -314,7 +314,7 @@ class GaussianModel:
         self.spatial_lr_scale = spatial_lr_scale
 
     def extend_from_pcd(
-            self, fused_point_cloud, features, scales, rots, opacities, kf_id
+            self, fused_point_cloud, features, scales, rots, opacities, kf_id=None
     ):
         new_xyz = nn.Parameter(fused_point_cloud.requires_grad_(True))
         new_features_dc = nn.Parameter(
@@ -326,8 +326,10 @@ class GaussianModel:
         new_scaling = nn.Parameter(scales.requires_grad_(True))
         new_rotation = nn.Parameter(rots.requires_grad_(True))
         new_opacity = nn.Parameter(opacities.requires_grad_(True))
-
-        new_unique_kfIDs = torch.ones((new_xyz.shape[0])).int() * kf_id
+        if kf_id is not None:
+            new_unique_kfIDs = torch.ones((new_xyz.shape[0])).int() * kf_id
+        else:
+            new_unique_kfIDs = None
         new_n_obs = torch.zeros((new_xyz.shape[0])).int()
         self.densification_postfix(
             new_xyz,
