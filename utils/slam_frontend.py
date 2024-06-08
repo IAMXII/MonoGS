@@ -64,16 +64,15 @@ class FrontEnd(mp.Process):
         scale = 1
         if self.monocular:  ### liuwei
             if depth is None:
-            # if init:     ### liuwei
-            #     initial_depth = 2 * torch.ones(1, gt_img.shape[1], gt_img.shape[2])
-            #     initial_depth += torch.randn_like(initial_depth) * 0.3
-            #     self.cameras[cur_frame_idx].scale = scale
+                # if init:     ### liuwei
+                #     initial_depth = 2 * torch.ones(1, gt_img.shape[1], gt_img.shape[2])
+                #     initial_depth += torch.randn_like(initial_depth) * 0.3
+                #     self.cameras[cur_frame_idx].scale = scale
                 # depth = initial_depth
 
                 initial_depth = torch.from_numpy(viewpoint.depth).unsqueeze(0)
                 initial_depth[~valid_rgb.cpu()] = 0  # Ignore the invalid rgb pixels
                 scale_value = scale.item() if isinstance(scale, torch.Tensor) else scale
-
 
                 # depth_get = (
                 #     torch.from_numpy(viewpoint.depth).unsqueeze(0).to(self.device)
@@ -84,8 +83,7 @@ class FrontEnd(mp.Process):
                 #         if depth_get[0, i, j]:
                 #             depth[0, i, j] = depth_get[0, i, j] * scale  ### liuwei
 
-
-                            # depth[0, i, j] = depth_get[0, i, j]
+                # depth[0, i, j] = depth_get[0, i, j]
                 # median_depth, std, valid_mask = get_median_depth(
                 #     depth, opacity, mask=valid_rgb, return_std=True
                 # )
@@ -102,7 +100,6 @@ class FrontEnd(mp.Process):
                 # initial_depth[~valid_rgb] = 0  # Ignore the invalid rgb pixels
                 # scale_value = scale.item() if isinstance(scale, torch.Tensor) else scale
                 # print("scale_value:", scale_value)
-
 
                 # scale_value = scale
                 # initial_depth = depth
@@ -146,15 +143,15 @@ class FrontEnd(mp.Process):
                             if depth_get[0, i, j]:
                                 if depth[0, i, j]:
                                     num += 1
-                                    sum += depth[0, i, j].item() / depth_get[0, i, j].item() ##orig
+                                    sum += depth[0, i, j].item() / depth_get[0, i, j].item()  ##orig
                                     # ratios.append(depth[0, i, j].item() / depth_get[0, i, j].item())
                                     # depth_render_pixel.append(depth[0, i, j].item())
                                     # depth_gt_pixel.append(depth_get[0, i, j].item())
                     # scale = sum / num  ##orign mean()?
                     # scale = round(scale,11)
-                    ratios= np.array(ratios)
-                    if len(ratios) <20:
-                        scale = sum / num##orign mean()
+                    ratios = np.array(ratios)
+                    if len(ratios) < 20:
+                        scale = sum / num  ##orign mean()
                     else:
                         # depth_render_pixel = np.array(depth_render_pixel)
                         # depth_gt_pixel = np.array(depth_gt_pixel)
@@ -422,7 +419,7 @@ class FrontEnd(mp.Process):
 
     def run(self):
         cur_frame_idx = 0
-        prev_scale=1
+        prev_scale = 1
         # self.cameras[cur_frame_idx].scale = 1
         projection_matrix = getProjectionMatrix2(
             znear=0.01,
@@ -569,8 +566,7 @@ class FrontEnd(mp.Process):
                     #     print("reset cur_frame_idx:", cur_frame_idx)
                     #     continue
 
-
-                    print("self.camera[current_idx].scale:",self.cameras[cur_frame_idx].scale)
+                    print("self.camera[current_idx].scale:", self.cameras[cur_frame_idx].scale)
                     print("prev_scale:", prev_scale)
 
                     self.request_keyframe(

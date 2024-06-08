@@ -30,7 +30,7 @@ from gaussian_splatting.utils.graphics_utils import BasicPointCloud, getWorld2Vi
 from gaussian_splatting.utils.sh_utils import RGB2SH
 from gaussian_splatting.utils.system_utils import mkdir_p
 
-worrld_radius = 1000
+world_radius = 1000
 
 
 class GaussianModel:
@@ -141,14 +141,14 @@ class GaussianModel:
 
     def insert_background(self):   # liuwei
         plane_normal = [0, 1, 0]  # z = 0 plane
-        plane_point = [0, -10, 0]  # Origin point on the plane
-        num_points = 100000
+        plane_point = [0, -20, 0]  # Origin point on the plane
+        num_points = 1000000
         x_range = (-100, 100)  # x coordinates range from -1000 to 1000
         y_range = (-100, 100)  # y coordinates range from -1000 to 1000
         points = self.generate_points_in_plane_area(plane_normal, plane_point, num_points, x_range, y_range)
         new_xyz = np.asarray(points)
         new_rgb = np.ones_like(new_xyz)
-        new_rgb = new_rgb * 255   # initialized as white
+        new_rgb = new_rgb   # initialized as white
         pcd = BasicPointCloud(
             points=new_xyz, colors=new_rgb, normals=np.zeros((new_xyz.shape[0], 3))
         )
@@ -162,7 +162,7 @@ class GaussianModel:
         )
         features[:, :3, 0] = fused_color
         features[:, 3:, 1:] = 0.0
-        point_size = 0.05
+        point_size = 0.25
         dist2 = (
                 torch.clamp_min(
                     distCUDA2(torch.from_numpy(np.asarray(pcd.points)).float().cuda()),
@@ -263,7 +263,8 @@ class GaussianModel:
         #     o3d.io.write_point_cloud("pcd_tmp_2.pcd", pcd_tmp)
         new_xyz = np.asarray(pcd_tmp.points)
         new_rgb = np.asarray(pcd_tmp.colors)
-
+        print(new_rgb.shape)
+        
         pcd = BasicPointCloud(
             points=new_xyz, colors=new_rgb, normals=np.zeros((new_xyz.shape[0], 3))
         )
@@ -767,7 +768,7 @@ class GaussianModel:
         new_opacities = self._opacity[selected_pts_mask]
         new_scaling = self._scaling[selected_pts_mask]
         new_rotation = self._rotation[selected_pts_mask]
-
+        
         new_kf_id = self.unique_kfIDs[selected_pts_mask.cpu()]
         new_n_obs = self.n_obs[selected_pts_mask.cpu()]
         self.densification_postfix(
